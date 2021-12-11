@@ -19,30 +19,30 @@ h2{
 }
 
     
-#Nav{
+#menu{
     font: size 110%;
     list-style-type: none;
     letter-spacing: 4px;
 }
-#logo, #Nav{
+#logo, #menu{
 line-height:75px;
 }
-#Nav li{
+#menu li{
     float:right;
     margin-right:30px;
 
 }
-#Nav a:hover{
+#menu a:hover{
     border-bottom:#777777 1px solid
 }
-#Nav a {
+#menu a {
 text-decoration:none;
 color:inherit;
 }
 .active{
     border-bottom:#777777 1px solid
 }
-ul {
+#menu ul {
     display: flex;
     flex-direction:row-reverse;
   }
@@ -148,7 +148,7 @@ hr{
     font-size:280%;
 }
 
-#circle-border{
+#circle-container{
     border:#cccccc 1px solid;
     width:300px;
     height:300px;
@@ -161,7 +161,92 @@ hr{
     background:url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png");
     background-position: none;
     background-position: center;
-    height:100%;
-    border-radius:50%;
+    height: 100%;
+    border-radius: 50%;
     
+}
+
+#times {
+margin-top:1rem;
+background-image:url('http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+overflow: hidden;
+
+}
+
+#times div{
+    color:#fafafa;
+    background-color: rgba(0,0,0, .6);
+    width: 19%;
+    height: 300px;
+    float:left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    margin: 2px;
+    
+}
+
+#times h2{
+    color:#fafafa
+}
+ 
+footer{
+    height:150px;
+    width:100%;
+
+}
+
+footer ul{
+    text-align:center;
+}
+footer li{
+    display:inline;
+}
+
+footer li i {
+    color:#777777;
+    font-size:160%;
+    margin:1%;
+    padding:5%;
+}
+
+#photos{
+    clear:both;
+    line-height: 0;
+    column-count:4;
+    column-gap: 0;
+
+    
+
+}
+#photos img {
+    width:100%;
+}
+
+@media screen and (max-width:1396px){
+    #club-ethos{
+        width:65%;
+        height:1200px;
+        margin: 0 auto;
+        
+
+    }
+    #welcome{
+        padding:30px 0;
+        margin:0;
+    }
+    #left-about, #right-about{
+        width:100%;
+        float:left;
+        padding:0;
+    }
+    #center-about{
+        clear:both;
+        width:100%;
+        float:left;
+        padding:0;
+    }
 }
